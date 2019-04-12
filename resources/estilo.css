@@ -1,0 +1,1835 @@
+/* 
+    CORES LOGO
+    
+    verde - 3da8ad
+    roxo - 8b4d9f
+    laranja - faa61a
+*/
+
+@font-face {
+    font-family: titulo1;
+    src: url(fontes/moon.ttf);
+}
+
+body{
+    font-family: verdana;
+    margin: 0;
+    color: #555;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #555;
+}
+
+#barra{
+    background-color: #3da8ad;
+    padding: 0.5% 0;
+    width: 100%;
+    clear: both
+}
+
+#menu{
+    background-image: url(img/textura.png); 
+    padding: 0.5% 5%;
+}
+
+#menu a, #menu li{
+    color: #fff;
+    transition: 1s color;
+}
+
+#menu a:hover, #menu li:hover{
+    color: #f7ca59;
+}
+
+#menu li{
+    display: inline-block
+}
+
+#menu img{
+    width: 15%;
+}
+
+#sub{
+    width: 85%;
+    float: right;
+    margin-top: 0.8%;
+}
+
+#sub nav{
+    width: 67%;
+    margin-left: 2%;
+    text-align: left
+}
+
+#sub ul, #sub2 ul{
+    margin: 1% 0;
+}
+
+#sub > ul{
+    width: 30%;
+    text-align: right;
+}
+
+#sub nav li{
+    padding-right: 4%;
+}
+
+#sub > ul li{
+    padding-left: 9%;
+    cursor: pointer
+}
+
+#sub ul{
+    padding: 0;
+}
+
+#sub nav, #sub > ul{
+    display: inline-table
+}
+
+
+#sub2{
+    width: 85%;
+    float: right;
+    margin-top: 0.4%;
+}
+
+#sub2 nav{
+    width: 90%;
+    margin-left: 2%;
+    text-align: left
+}
+
+#sub2 ul{
+    margin: 1% 0;
+}
+
+#sub2 > ul{
+    text-align: right;
+    width: 5%;
+}
+
+#segundo{
+    padding-top: 0.5%;
+}
+
+#sub2 nav li{
+    padding-right: 4%;
+}
+
+#sub2 > ul li{
+    padding-left: 9%;
+    cursor: pointer
+}
+
+#sub2 ul{
+    padding: 0;
+}
+
+#sub2 nav, #sub2 > ul{
+    display: inline-table;
+}
+
+#banner{
+    background-image: url(img/banner.jpg);    
+    background-size: 100%;
+    background-attachment: fixed
+}
+
+#banner h1{
+    font-family: titulo1;
+    color: #fff;
+    margin: 0;
+    padding: 15% 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 90px;
+    font-weight: normal
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+    padding: 5% 0;
+}
+
+.container2{
+    width: 85%;
+    margin: 0 auto;
+    padding: 5% 0;
+}
+
+#sobre{
+    background-image: url(img/textura.png); 
+    color: #fff;
+}
+
+#sobre div div{
+    width: 60%;
+    text-align: left;
+}
+
+#sobre a{
+    color: #fff;
+    transition: 1s color
+}
+
+#sobre a:hover{
+    color: #3da8ad;
+}
+
+#tipos div div{
+    width: 30%;
+    display: inline-table
+}
+
+#tipos img{
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+}
+
+#tipos div div:first-child, #tipos div div:nth-child(2){
+    margin-right: 4.3%;
+}
+
+#func{
+    background-image: url(img/como-funciona.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+#func h2, #func a{
+    color: #fff;
+}
+
+#func h2{
+    font-size: 24px;
+}
+
+#func a{
+    border-radius: 10px;
+    border: 1px solid #fff;
+    padding: 2% 3%;
+    margin-top: 3%;
+    transition: 1s background-color;
+}
+
+#func a:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+footer{
+    background-image: url(img/textura.png); 
+}
+
+footer p{
+    color: #fff;
+    margin: 0;
+    padding: 1% 0;
+}
+
+.format h2{
+    color: #3da8ad;
+}
+
+/*LOGIN*/
+
+
+#login{
+    width: 24%;
+    position: fixed;
+    top: 50%;
+    margin-top: -15%;
+    background-color: #fff;
+    left: 50%;
+    margin-left: -15%;
+    padding: 3%;
+    border-radius: 10px;
+    display: none;
+    box-shadow: 5px 5px 25px #000
+}
+
+#login h2{
+    color: #3da8ad;
+    margin-top: 0;
+    font-size: 25px;
+}
+
+#login p{
+    margin: 6% 0 2% 0;
+    text-align: left
+}
+
+#login a{
+    font-size: 14px;
+    transition: 1s color
+}
+
+#login a:hover{
+    color: #faa61a;
+}
+
+#login form + p{
+    text-align: center
+}
+
+#login input{
+    width: 94%;
+}
+
+#login input[type="submit"]{
+    width: 100%
+}
+
+input{
+    width: 100%;
+    border: 1px solid #dcdcdc;
+    font-size: 16px;
+    outline: 0;
+    transition: 1s border;
+    padding: 2%;
+}
+
+input:focus{
+    border: 1px solid #3da8ad
+}
+
+input[type="submit"]{
+    background-color: #3da8ad;
+    color: #fff;
+    cursor: pointer;
+    width: 104.8%;
+    margin-top: 6%;
+    padding: 3% 2%;
+    transition: 1s background-color;
+}
+
+input[type="submit"]:hover{
+    background-color: #16767a;
+}
+
+/*SOBRE NOS*/
+
+#campanha{
+    background-image: url(img/campanha.jpeg);
+    background-size: 100%;
+    background-attachment: fixed;
+    box-shadow: 5px 3px 25px #999;
+}
+
+#campanha h1{
+    margin: 0;
+    padding: 9% 0;
+    color: #555;
+}
+#contato{
+    background-image: url(img/contato.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    box-shadow: 5px 3px 25px #999;
+}
+#contato h1{
+    margin: 0;
+    padding: 9% 0;
+    color: #fff;
+}
+#funciona{
+    background-image: url(img/funciona.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    box-shadow: 5px 3px 25px #999;
+    
+}
+#funciona h1{
+    margin: 0;
+    padding: 9% 0;
+    color: #fff
+}
+#termos{
+    background-image: url(img/termo.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    box-shadow: 5px 3px 25px #999;
+}
+#termos h1{
+    margin: 0;
+    padding: 9% 0;
+    color: #555;
+}
+.emprestimo{
+    background-image: url(img/empres.png);
+    background-attachment: fixed;
+}
+.emprestimo h2{
+    color: #fff;
+}
+.format{
+    text-align: justify
+}
+
+.format h2{
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+#dev{
+    width: 70%;
+    margin: 0 auto;
+}
+
+#dev img{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    transition: 1s filter;
+}
+
+#dev img:hover{
+    filter: grayscale(0%);    
+}
+
+#dev div{
+    width: 30%;
+    display: inline-table;
+    margin: 0 1.3%;
+}
+
+/*TERMOS*/
+
+summary{
+    margin-top: 5%;
+    color: #3da8ad;
+    font-weight: bold;
+    outline: 0;
+    cursor: pointer
+}
+
+summary + p, summary + ol{
+    padding-left: 5%;
+}
+
+.format iframe{
+    margin-top: 5%;
+}
+
+#capa{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 15% 0;
+    background-image: url(img/capa.png);
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#cont-perfil, #cont-livro{
+    background-color: #fff;
+    width: 65%;
+    margin: 4% auto;
+    box-shadow: 3px 3px 15px #555;
+    padding: 4% 2%;
+}
+
+#cont-livro{
+    width: 80%;
+}
+
+#cont-perfil{
+    text-align: left;  
+}
+
+#perfil{
+    width: 80%;
+    margin:auto;
+    border-radius: 50%;
+    border: 5px solid #f2efef;
+}
+
+#perfil + h1{
+    color: #3da8ad;
+    margin-bottom: 0;
+}
+h1{
+    color: #3da8ad;
+}
+
+#pontos{    
+    margin:1% 0 0 5%;
+    color: #faa61a;
+}
+
+#form-cadastro{
+    padding: 5%;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#form-cadastro p{
+    text-align: left;
+    margin-bottom: 1%;
+}
+
+#form-cadastro input{
+    padding: 1%;    
+    width: 98%;
+}
+
+#form-cadastro textarea{
+    width: 99%;
+    resize: none;
+    border: 1px solid #dcdcdc;
+    outline: 0;
+    transition: 1s border;
+    font-size: 16px;
+    font-family: verdana
+}
+
+#form-cadastro textarea:focus{
+    border: 1px solid #3da8ad
+}
+
+#form-cadastro > div{
+    clear: both
+}
+
+#form-cadastro select{
+    width: 100%;
+    outline: 0;
+    border: 1px solid #dcdcdc;
+    font-size: 16px;
+    padding: 1%;
+    transition: 1s border;
+}
+
+#form-cadastro select:focus{
+    border: 1px solid #3da8ad
+}
+
+#form-cadastro > div + p{
+    padding-top: 3%;
+    clear: both;
+}
+
+.divide, .divide2{
+    width: 49%;
+}
+
+.divide2{
+    float: right;
+}
+
+.divide{
+    float: left;
+}
+
+
+fieldset label{
+    width: 23%;
+    display: inline-block;
+    text-align: left;
+    margin: 0.5% 0;
+}
+
+fieldset legend{
+    text-align: left
+}
+
+fieldset legend p{
+    margin: 0;
+}
+
+fieldset{
+    border: 1px solid #dcdcdc;
+    margin-top: 3%;
+    padding: 2%;
+}
+
+#form-cadastro input[type="checkbox"]{
+    width: auto;
+}
+
+#form-cadastro input[type="submit"]{
+    width: auto;
+    padding: 1.5% 3%;
+    margin-top: 3%;
+}
+
+#qt-transacao div{
+    width: 25%;
+    display: inline-table;
+    text-align: center;
+}
+
+@font-face {
+    font-family: titulo;
+    src: url(fontes/shorthalt.otf);
+}
+
+#qt-transacao span{
+    font-family: titulo;
+    font-size: 80px;
+    color:#faa61a;
+    border:2px solid #faa61a;
+    border-radius:50%;
+    padding: 0 20%;
+}
+#qt-transacao{
+    width: 40%;
+    margin:auto;
+    margin:auto;
+}
+#qt-transacao span p{
+    margin-top:3%;
+}
+#qt-transacao  p{
+  color:#faa61a;
+}
+
+.hr-format{
+    clear:both;
+    width: 70%;
+    margin: 3% auto;
+    border: 0.5px solid #dcdcdc;
+}
+
+#cont-transacoes{
+    text-align:center;
+}
+
+#cont-transacoes div{
+    width: 48%;
+    display: inline-table
+}
+
+#cont-transacoes hr{
+    
+}
+
+#cont-transacoes h2{
+    margin: 0;
+}
+
+#resultado{
+
+}
+
+.cont{
+    clear: both; 
+}
+
+.cont div{
+    width: 31%;
+    float: left;
+    padding-bottom: 3%;
+    margin: 0 1.16%;
+}
+
+.cont div img{
+    width: 23%;
+}
+
+.cont div p{
+    width: 74%;
+    padding-left: 3%;
+    float: right;
+    margin: 0;
+    text-align: left;
+    font-size: 14px;
+}
+
+.cont span:not(#dispon){
+    display: block;
+    font-weight: bold;
+    color: #3da8ad;
+    font-size: 18px;
+    margin-bottom: 2%;
+}
+
+.cont #dispon{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+#errologin{
+    width: 24%;
+    position: fixed;
+    top: 50%;
+    margin-top: -15%;
+    background-color: #fff;
+    left: 50%;
+    margin-left: -15%;
+    padding: 9% 3%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 25px #000
+}
+
+#errologin p{
+    color: #3da8ad;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#errologin img{
+    width: 15%;
+    display: block;
+    margin: 0 auto;
+}
+
+#opc-pesquisa{
+   
+}
+
+#opc-pesquisa p{
+    display: inline-block;
+}
+
+#opc-pesquisa p, #opc-pesquisa label{
+    margin-right: 3%;
+}
+
+#opc-pesquisa input{
+    width: auto;
+}
+
+#opc-livro{
+    margin: 3% 0;
+}
+
+#opc-livro div{
+    width: 30%;
+    display: inline-table;
+    margin: 0 3%;
+}
+
+#opc-livro h2{
+    font-size: 30px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+#opc-livro hr{
+    border: 1.5px solid #3da8ad;
+    width: 90%;
+}
+
+#opc-livro div:nth-child(2) hr{
+    border: 1.5px solid #fff;
+}
+
+#busca-estante, #busca-interesse{
+    width: 80%;
+    margin: 4% auto 0;
+}
+
+#busca-interesse{
+    display: none;
+}
+
+#busca-estante input[type="submit"], #busca-interesse input[type="submit"]{
+    width: auto;
+    padding: 1.5% 3%;
+    margin: 2% 0;
+}
+
+#resultado{
+    margin: 5% 0 3%;
+}
+
+#foto{
+    width: 27%;
+    margin-right: 2%;
+    border: 5px solid #f2efef;
+}
+
+.conteudo{
+    width: 68%;
+    float: right;
+    text-align: justify;
+}
+
+.conteudo h1{
+    margin-top: 0;
+    color: #222;
+}
+
+.conteudo span{
+    font-weight: bold;    
+}
+
+#avaliacao{
+    width: 15%;
+}
+
+#estado{
+    position: fixed;
+    width: 50%;
+    top: 50%;
+    margin-top: -13%;
+    left: 50%;
+    margin-left: -25%;
+    padding: 0.0% 1%;
+    background-image: url(img/balao.png);
+    background-size: 100% 100%;
+    text-align: center;
+    border-radius: 10px;
+    filter: drop-shadow(3px 3px 10px #222);
+    display: none;
+}
+
+#estado fieldset{
+    border-radius: 5px;
+    padding: 3% 6%;
+    margin: 10% 0 12% 0;
+    border: 0;
+}
+
+#estado legend{
+    border-radius: 5px;
+    margin-bottom: 3%;
+    text-align: center;
+    font-size: 20px;
+}
+
+#estado input{
+    width: auto;
+}
+
+#estado input[type="submit"]{
+    padding: 2% 4%;
+    margin-top: 6%;
+    border: 0;
+    background-image: url("/resources/img/btn/right.png");
+    background-color: #fff;
+    background-size: 100% 100%
+}
+
+/*
+#estado input[type="submit"]{
+    padding: 2% 3%;
+    margin-top: 3%;
+    border-radius: 5px;
+}
+*/
+
+#estado label{
+    width: 30%;
+    margin: 1%;
+}
+
+#disponibilizar{
+    width: 5%;
+    float: right;
+    margin-top: 2%;
+    clear: both;
+    cursor: pointer;
+}
+
+#legenda{
+    clear: both;
+    text-align: right;
+    margin-top: 1%;
+    padding-top: 1%;
+    color: #c1c1c1;
+}
+
+#botoes-transacao{
+    width: 23%;
+    float: right;
+    clear: both;
+}
+
+#botoes-transacao input[type="submit"]{
+    width: 22%;
+    float: left;
+    border: 0;
+    margin-top: 2%;
+    padding: 7% 0;
+    margin-left: 3%;
+    cursor: pointer;
+    background-color: #fff;
+    background-size: 100% 100%;
+}
+
+#sair form{
+
+}
+
+#sair input{
+    background-image: url(img/textura.png); 
+    padding: 0;
+    margin: 0;
+    width: auto;
+    text-align: right;
+    border: 0;
+}
+
+#mapa-contato{
+    width: 48%;
+    margin-top: 2%;
+}
+
+#info{
+    width: 50%;
+    float: right;
+}
+
+#info p{
+    margin-bottom: 1%;
+}
+
+#info input{
+    padding: 1.5%;
+}
+
+#info textarea{
+    width: 100%;
+    padding: 1.5%;
+    font-size: 16px;
+    font-family: verdana;
+    outline: 0;
+    border: 1px solid #dcdcdc;
+    resize: none;
+    transition: 1s border
+}
+
+#info textarea:focus{
+    border: 1px solid #3da8ad
+}
+
+#info input[type="submit"]{
+    width: auto;
+    padding: 1.5% 3%;
+    margin: 3% auto 0 auto;
+    display: block
+}
+
+#form-senha{
+    margin-top: 5%;
+}
+
+#form-senha input{
+    padding: 1.0%;    
+}
+
+#form-senha input[type="submit"]{
+    width: auto;
+    padding: 1.5% 3%;
+    display: block;
+    margin: 3% auto 0 auto;
+}
+
+.linha{
+    margin-bottom: 4%
+}
+
+#form-cadastro #cpf{
+    padding-top: 1.8%;
+    padding-bottom: 1.8%;
+}
+
+#cont-dev{
+    width: 100%;
+    background-size: 100%;
+    background-position: center;
+}
+
+#informe{
+    background-color: #f2efef;
+    border-radius: 15px;
+    padding: 3%;
+    width: 75%;
+    margin: 3% auto;
+}
+
+#informe img{
+    width: 10%;
+    margin-right: 5%;
+}
+
+#informe p{
+    text-align: justify;
+    width: 85%;
+    float: right;
+    margin: 0;
+}
+
+#informe span{
+    font-weight: bold;
+    display: block;
+    margin-top: 1%;
+}
+
+.cont .premio{
+    margin-top: 4%;    
+}
+
+.cont .premio img{
+    width: 50%;
+    margin: 6% auto;
+    display: block;
+    border: 5px solid #f2efef;
+}
+
+.cont .premio p{
+    width: 100%;
+    text-align: center;
+    float: none;
+    padding: 0;
+}
+
+.cont .pt{
+    display: block;
+    font-weight: bold;
+    color: #faa61a;
+    margin-top: 2%;
+}
+
+.poss, .n-poss{
+    padding: 3% 5%;
+    border-radius: 7px;
+    color: #fff;
+}
+
+.poss{
+    background-color: #3da8ad;
+}
+
+.n-poss{
+    background-color: #9b9999;
+    cursor: default;
+}
+
+#who + hr{
+    border: 0;
+    border-bottom: 1px solid #3da8ad;
+}
+
+#who a{
+    transition: 1s color;
+}
+
+#who a:hover{
+    color: #3da8ad;
+}
+
+#botoes-transacao  .indisp input[type="submit"]{
+    cursor: default;
+}
+
+#escolhido{
+    width: 60%;
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 5px 5px 25px #000;
+    padding: 3%;
+    border-radius: 10px;
+    left: 50%;
+    margin-left: -33%;
+    top: 50%;
+    margin-top: -15%;
+}
+
+#escolhido img{
+    width: 40%;
+    display: inline-block;
+    border: 5px solid #f2efef;
+}
+
+#escolhido div{
+    width: 56%;
+    margin-left: 2%;
+    float: right;
+}
+
+#escolhido span{
+    display: block;
+    font-weight: bold;
+    color: #3da8ad;
+    font-size: 18px;
+    margin-bottom: 2%;
+}
+
+#escolhido form{
+    margin: 4% 0;    
+}
+
+#escolhido input{
+    margin-top: 2%;
+    color: #555;
+}
+
+#escolhido input[type="submit"]{
+    width: auto;
+    padding: 3% 4%;
+    color: #fff;
+}
+
+
+#botoes-transacao2{
+    width: 17.25%;
+    float: right;
+    clear: both;
+}
+
+#botoes-transacao2 input[type="submit"]{
+    width: 29.3%;
+    float: left;
+    border: 0;
+    margin-top: 2%;
+    padding: 9.3% 0;
+    margin-left: 4%;
+    cursor: pointer;
+    background-color: #fff;
+    background-size: 100% 100%;
+}
+
+#solic-emp{
+    width: 28%;
+    margin-top: 2%;
+    margin-left: 4%;
+    cursor: pointer;
+}
+
+#botoes-transacao2 .indisp input[type="submit"]{
+    cursor: default;
+}
+
+#princ{
+    width: 70%;
+    float: right;
+}
+#info-perfil{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.citacao{
+    width: 5%;
+    display: inline-table;
+}
+
+#desc{
+    width: 80%;
+    margin-left: 3%;
+    display: inline-table;
+    text-align: justify;
+    margin-top:0%;
+}
+
+#div-emprestimo{
+    position: fixed;
+    width: 50%;
+    top: 50%;
+    margin-top: -13%;
+    left: 50%;
+    margin-left: -25%;
+    padding: 0.0% 1%;
+    background-image: url(img/balao.png);
+    background-size: 100% 100%;
+    text-align: center;
+    padding: 5% 0;
+    border-radius: 10px;
+    filter: drop-shadow(3px 3px 10px #222);
+    display: none;
+}
+
+#div-emprestimo span{
+    display: block;
+    font-weight: bold;
+    color: #8b4d9f;
+    font-size: 18px;
+    margin-bottom: 2%;
+}
+    /*width: 60%;*/
+    /*left: 50%;*/
+    /*margin-left: -33%;*/
+    /*top: 50%;*/
+    /*margin-top: -15%;*/
+
+#form-emp{
+    margin: 5% auto;
+    width: 70%;
+}
+
+#form-emp input[type="submit"]{
+    width: auto;
+    background-size: 100% 100%;
+    background-color: #fff;
+    border: 0;
+    padding: 4% 6%;
+    margin-top: 3%;
+}
+
+#capa-quad{
+    padding: 8%;
+    display: inline-block;
+    background-size: 100%;
+    border-radius: 50%;
+    background-position: center;
+    border: 5px solid #f2efef;
+}
+
+#capa-quad + div{
+    width: 78%;
+    float: right;
+    text-align: left;
+}
+
+#solic-quad{
+    width: 98%;
+    margin: 5% auto;
+    padding: 2% 0;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+}
+
+#solic-quad > div{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.oferta{
+    width: auto;
+    display: inline-table
+}
+
+.oferta input[type="submit"]{
+    width: auto;
+    display: inline-table;
+}
+
+.cont div .livrin{
+    width: 74%;
+    padding-left: 3%;
+    float: right;
+    margin: 0;
+    text-align: left;
+    font-size: 14px;
+}
+
+.cont div .livrin input[type="submit"]{
+    background-color: #faa61a;
+    padding: 5% 10%;
+    border-radius: 7px;
+    margin-top: 15%;
+}
+
+.icons-func{
+    width:20%;
+}
+.trok{
+    display: inline-block;
+    width: 20%;
+}
+.empr{
+    display: inline-block;
+    width: 20%;
+}
+.doac{
+    display: inline-block;
+    width: 20%;
+}
+.emprestimo h3{
+    color:white;
+}
+
+.slc-livros{
+    display:flex;
+}
+
+.slc-livro{
+    margin:1%;
+    box-sizing:border-box;
+    width: 48%;
+    background-color: #3da8ad;
+    border-radius: 10px;
+    display:flex;
+}
+
+.slc-livro img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.slc-livro div:first-child{
+    background-color: #fffcfc;
+    width: 85%;
+    padding: 1% 3%;
+}
+
+.slc-livro > div:first-child{
+    border: 1px solid #f2f2f2;
+}
+
+.slc-livro div:nth-child(2){
+    width: 15%;
+    background-image:url(../resources/img/icons/doacaobranco.png);
+    background-size:50px;
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+
+.slc-livro div:nth-child(2) img{
+    width: 100%;
+}
+
+.slc-livro form{
+    display:inline-block;
+}
+
+.slc-livro input[type='submit']{
+    margin: 0;
+    width:125px;
+    padding:10px 15px;
+}
+
+.slc-livro .aceitar{
+    margin-right: 3%;
+}
+
+.slc-livro .rejeitar input[type='submit']{
+    background-color: #fff;
+    color: #3da8ad;
+}
+
+.troquei input[type='submit']{
+    background-color: #faa61a;
+}
+
+.troquei + .rejeitar input[type='submit']{
+    color: #faa61a;
+}
+
+.emprestei input[type='submit']{
+    background-color: #8b4d9f;
+}
+
+.emprestei + .rejeitar input[type='submit']{
+    color: #8b4d9f;
+}
+
+.imagens{
+    display:flex;
+    flex-direction:column;
+}
+.imagens img{
+    margin:5px 0;
+    width:45px;
+    height:45px;
+}
+.parteSuperior{
+    display:flex;
+    align-items:center;
+    width:100% !important;
+    min-height:100px !important;
+    justify-content:space-between;
+}
+.parteSuperior p {
+    width:50%;
+}
+.perfil-icon{
+    width:5%;
+}
+.iconperf{
+    width:25%;
+}
+#tag-perfil, #tag-perfil2{
+    display:flex;
+    margin-bottom: 2%
+}
+#tag-perfil h2{
+    margin:0 0 0 5%;
+}
+#tag-perfil3 p{
+    padding:0;
+}
+#tag-perfil img, #tag-perfil2 img{
+    width:25px;
+    height:25px;
+}
+.troquinha{
+    background-color: #faa61a;
+}
+
+.slc-livro .imgT{
+    background-image: url(../resources/img/icons/trocabranco.png) !important;
+}
+
+.empzinho{
+    background-color: #8b4d9f;
+}
+
+.slc-livro .imgE{
+    background-image: url(../resources/img/icons/empresbranco.png) !important;
+}
+
+#minhas-solics hr{
+    margin: 5% 0;
+    border-top: 1px solid #dcdcdc;
+}
+#flag{
+    float: left;
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    display:inline-block;
+}
+
+.cont-flex{
+    display: flex;
+}
+
+#pessoas{
+    text-align: left;
+    width: 30%;
+    margin-top: 2%;
+    height: 545px;
+    overflow: auto;
+}
+
+#pessoas > div{
+    width: 100%;
+    clear: both;
+}
+
+#pessoas img{
+    width: 18%;
+    padding: 1%;
+    border-radius: 50%;
+}
+
+.div-d{
+    background-color: #3da8ad;
+}
+
+.div-t{
+    background-color: #faa61a;
+}
+
+.div-e{
+    background-color: #8b4d9f;
+}
+
+.cont-cor{
+    background-color: #fff;
+    border-top: 0.5px solid #f2f2f2;
+    border-bottom: 0.5px solid #f2f2f2;
+    width: 95%;
+}
+
+.cont-cor p{
+    width: 75%;
+    float: right;
+    margin: 1% 0;
+}
+
+.cont-cor span{
+    color: #a5a5a5;
+}
+
+#cont-conversa{
+    width: 68%;
+    margin-left: 2%;
+    display: none;
+    float: right;
+    margin-top: 2%;
+}
+
+#conversa{
+    border: 0.5px solid #f2f2f2;
+    height: 460px;
+    width: 100%;
+    overflow: auto;
+}
+
+#form-conversa{
+    width: 100%;
+}
+
+#form-conversa input[type="text"]{
+    width: 80%;
+    padding: 1%;
+    margin-top: 2%;
+}
+
+#form-conversa input[type="submit"]{
+    width: 17%;
+    padding: 1%;
+    margin-top: 2%;
+}
+
+.troca, .emprestimo, .doacao{
+    padding: 6% 0;
+}
+
+
+.troca p, .emprestimo p, .doacao p{
+    width: 85%;
+    text-align: center;
+    margin: 4% auto;
+}
+
+#cadastrar-banner #campanha{
+    background-image: url(img/cadastrar.jpg);
+}
+
+#esqueci #campanha{
+    background-image: url(img/esqueci.jpg);
+}
+
+#botao-voltar{
+    background-color: #3da8ad;
+    color: #fff;
+    padding: 1% 3%;
+}
+
+#btn-menu{
+    display: none;
+}
+
+.cadaConversa{
+    cursor: pointer
+}
+
+.msg-outro, .msg-minha{
+    max-width: 70%;
+    display: inline-table;
+    text-align: left;
+    border-radius: 10px;
+    padding: 1%;
+    clear: both;
+}
+
+.msg-outro{
+    margin-left: 0;
+    float: left;
+    margin-left: 2%;
+    background-color: #f7fffd;
+}
+
+.msg-minha{
+    float: right;
+    margin-right: 2%;
+    background-color: #fffaf2;
+}
+
+.some{
+    display: none
+}
+
+#filtro{
+    text-align: right;
+    margin-top: -10%;
+    margin-right: 6.5%;
+}
+
+#filtro select{
+    padding: 0.5% 1%;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid #dcdcdc;
+    margin-right: 1%
+}
+
+#filtro input[type="submit"]{
+    width: auto;
+    padding: 0.5% 1%;
+    margin: 0;
+    margin-bottom: 10%;
+}
+
+.limpa{
+    display: block;
+    clear:both;
+    width: 100%;
+    padding: 0.1% 0;
+}
+
+#minha_transacao{
+    text-align: center
+}
+
+#minha_transacao div{
+    width: 15%;
+    display: inline-block;
+    margin: 4% 2% 2% 2%;
+    font-weight: bold
+}
+
+#minha_transacao span{
+    border: 2px solid #3da8ad;
+    padding: 20% 25%;
+    border-radius: 50%;
+}
+
+#previa-estante{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#previa-estante h2{
+    text-align: center
+}
+
+#info-conv{
+    width: 95%;
+    text-align: left;
+    margin-bottom: 2%;
+    padding: 2%;
+}
+
+#nomelivro, #tipotransacao{
+    color: #3da8ad;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#ver-estante{
+    clear: both;
+    text-align: right;
+    width: 95%;
+}
+
+#ver-estante a{
+    color: #faa61a
+}
+
+#ver-estante a:hover{
+    text-decoration: underline
+}
+
+/*#3da8ad*/
+
+/*<span id="nomelivro"></span><br>*/
+/*                        <span id="nomeusu"></span><br>*/
+/*                        <span id="tipotransacao"></span>*/
+
+#send{
+    background-color: #3da8ad;
+    color: #fff;
+    border: 0;
+    width: 16%;
+    padding: 1.2% 0;
+}
+
+#info-conv{
+    display: flex    
+}
+
+#sub-conv{
+    width: 75%;
+}
+
+#sub-conv2{
+    width: 25%;
+    text-align: right;
+    display: flex
+}
+
+#conversa-apagar, #conversa-confirmar{
+    width: 50%;
+}
+
+#conversa-apagar input[type='submit'], #conversa-confirmar input[type='submit']{
+    border-radius: 50%;
+    width: auto;
+    padding: 15% 30%;
+    margin: 0;
+    background-image: url(img/fundos/cancel.png); 
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+#conversa-confirmar input[type='submit']{
+    background-image: url(img/fundos/checked.png); 
+    background-size: 60%;
+}
+
+#finalizada h2{
+    margin-top: 6%;  
+    margin-bottom: 3%;
+    color: #3da8ad;
+    font-size: 26px;
+}
+
+@media screen and (max-width: 1350px){
+    #sub ul{
+        margin: 0;
+    }    
+}
+
+@media (pointer: coarse){
+    #sub{
+        position: fixed;
+        background-color: #000;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1000px;
+        z-index: 100000;
+        display: none;
+    }
+    
+    #sub nav, #sub > ul{
+        display: block;
+    }
+    
+    #sub ul{
+        margin-left: 15%;
+    }
+    
+    #sub > ul{
+        width: 67%;
+        margin-left: 12%;
+    }
+    
+    #sub > ul li{
+        padding-left: 0;
+    }
+    
+    #sub li{
+        margin-top: 23%;
+    }
+    
+    #menu li{
+        display: block;    
+    }
+    
+    #sub > ul{
+        text-align: left
+    }
+    
+    #campanha h1, #funciona h1, #termos h1{
+        font-size: 20px;
+    }
+    
+    #menu img{
+        width: 35%;
+        padding: 2% 0;
+    }
+    
+    .container{
+        width: 85%;
+    }
+    
+    #dev{
+        width: 90%;
+    }
+    
+    #dev div{
+        width: 28%;
+    }
+    
+    #dev img{
+        width: 80%;
+    }
+    
+    .trok, .empr, .doac{
+        width: 30%;
+        margin-top: 5%;
+        display: inline-table;
+    }
+    
+    .trok h3, .empr h3, .doac h3{
+        font-size: 15px;
+        margin-top: 2%;
+    }
+    
+    details{
+        padding: 3% 0;
+    }
+    
+    #mapa-contato{
+        margin: 0;
+        width: 100%;
+        height: 200px;
+    }
+    
+    #info{
+        width: 100%;
+        float: none;
+    }
+    
+    #info input, #info textarea{
+        width: 96%;
+    }
+    
+    #form-cadastro{
+        width: 85%;
+    }
+    
+    .divide2, .divide{
+        width: 100%;
+        margin: 0;
+        float: none;
+    }
+    
+    fieldset label{
+        width: 47%;
+    }
+    
+    #btn-menu{
+        display: block;
+        position: absolute;
+        width: 7%;
+        top: 2%;
+        left: 1%;
+        z-index: 1000034;
+    }
+    
+    #login{
+        z-index: 1000035;
+        width: 74%;
+        margin-left: -40%;
+        margin-top: -40%;
+    }
+    
+    #sair form{
+        float: none;
+    }
+    
+    #informe img{
+        width: 20%;
+        margin: 5% 0;
+    }
+    
+    #informe p{
+        float: none;
+        width: 100%;
+    }
+    
+    #informe{
+        margin-bottom: 15%;
+    }
+    
+    .cont div {
+        width: 100%;
+        float: none;
+        padding-bottom: 3%;
+        margin: 15% 0;
+    }
+    
+    /*.slc-livros{*/
+    /*    display: block*/
+    /*}*/
+    
+    /*.slc-livro {*/
+    /*    margin: 0%;*/
+    /*    box-sizing: border-box;*/
+    /*    width: 100%;*/
+    /*    background-color: #3da8ad;*/
+    /*    border-radius: 10px;*/
+    /*    display: block;*/
+    /*}*/
+}
+
